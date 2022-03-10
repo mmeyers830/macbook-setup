@@ -1,23 +1,27 @@
 # MacOS Setup
+## Homebrew
+`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”`
+
 ## Chrome 
 [Download](https://www.google.com/chrome/)
+
 OR
+
 `brew install --cask google-chrome`
 
 ## Logi Options
 [Download](https://www.logitech.com/en-us/software/options.html)
 
-## Homebrew
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”`
-
 ## ITerm
-`brew cask install iterm2`
+`brew install --cask iterm2`
 ### oh-my-zsh
 `sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
 ### Themes
 Follow instructions [here](https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4b05) to do Starship
 
 Be sure to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+
+`brew install zsh-syntax-highlighting`
 
 Update the starship config at `~/.config/starship.toml`
 ```
@@ -67,6 +71,8 @@ Install packages:
   * vscode-icons-team.vscode-icons
   * ms-vscode-remote.remote-ssh
   * amazonwebservices.aws-toolkit-vscode
+  * ms-azuretools.vscode-docker
+  * eamodio.gitlens
 
 ### VS Code Terminal
 #### Font
