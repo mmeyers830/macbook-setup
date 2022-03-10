@@ -3,10 +3,6 @@
 `/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”`
 
 ## Chrome 
-[Download](https://www.google.com/chrome/)
-
-OR
-
 `brew install --cask google-chrome`
 
 ## Logi Options
@@ -19,7 +15,7 @@ OR
 ### Themes
 Follow instructions [here](https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4b05) to do Starship
 
-Be sure to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+Be sure to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
 
 `brew install zsh-syntax-highlighting`
 
@@ -96,3 +92,6 @@ To allow Starship to be displayed right, change the font to the font you install
 
 ## AWS CLI
 `brew install awscli`
+
+## Docker
+`brew install --cask docker`
