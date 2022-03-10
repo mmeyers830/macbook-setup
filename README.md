@@ -69,6 +69,7 @@ Install packages:
   * amazonwebservices.aws-toolkit-vscode
   * ms-azuretools.vscode-docker
   * eamodio.gitlens
+  * JuanBlanco.solidity
 
 ### VS Code Terminal
 #### Font
