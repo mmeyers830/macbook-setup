@@ -1,6 +1,8 @@
 # MacOS Setup
 ## Chrome 
 [Download](https://www.google.com/chrome/)
+OR
+`brew install --cask google-chrome`
 
 ## Logi Options
 [Download](https://www.logitech.com/en-us/software/options.html)
