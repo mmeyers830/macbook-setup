@@ -50,6 +50,10 @@ To preserve the full history:
 ### Scroll on Less
 > Settings -> Advanced -> Scroll wheel sends arrow keys when in alternate screen mode -> Yes
 
+### Save Paging Output on Exit
+When running git diff or similar commands that page, this will save the output to the history
+> Preferences -> Profiles -> Terminal -> Disable save/restore alternate screen
+
 ## Rectangle
 `brew install rectangle`
 
