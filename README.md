@@ -47,6 +47,9 @@ To be able to do things like alt+left to skip words and such, you need to update
 To preserve the full history:
 > Preferences -> Profiles -> Terminal -> Unlimited scrollback
 
+### Scroll on Less
+> Settings -> Advanced -> Scroll wheel sends arrow keys when in alternate screen mode -> Yes
+
 ## Rectangle
 `brew install rectangle`
 
