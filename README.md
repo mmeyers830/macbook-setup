@@ -1,24 +1,44 @@
 # MacOS Setup
 ## Homebrew
-`/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)”`
+```
+/bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+```
 
 ## Chrome 
-`brew install --cask google-chrome`
+```
+brew install --cask google-chrome
+```
 
 ## Logi Options
 [Download](https://www.logitech.com/en-us/software/options.html)
 
 ## ITerm
-`brew install --cask iterm2`
+```
+brew install --cask iterm2
+```
 ### oh-my-zsh
-`sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"`
-### Themes
-Follow instructions [here](https://towardsdatascience.com/the-ultimate-guide-to-your-terminal-makeover-e11f9b87ac99#4b05) to do Starship
+```
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```
+#### Plugins
+First, clone a few plugins
+```
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+In your `.zshrc` file, find the plugins
+```
+plugins=(git brew autojump zsh-syntax-highlighting zsh-autosuggestions)
+```
 
-Be sure to install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md#oh-my-zsh)
-
-`brew install zsh-syntax-highlighting`
-
+### Starship
+Install starship and fonts
+```
+brew install starship
+echo 'eval "$(starship init zsh)"' >> ~/.zshrc
+brew tap homebrew/cask-fonts
+brew install --cask font-hack-nerd-font
+```
 Update the starship config at `~/.config/starship.toml`
 ```
 format = """
@@ -38,6 +58,12 @@ format = "[$time]($style) "
 disabled = true
 ```
 
+Change the color presets to [Snazzy](https://github.com/sindresorhus/iterm2-snazzy)
+> Preferences -> Profiles -> Colors -> Color Presets -> Snazzy
+
+Change the font to [Hack Nerd Font Mono](https://www.nerdfonts.com) (installed above)
+> Preferences -> Profiles -> Text -> Font -> Hack Nerd Font Mono
+
 ### Keys Preferences
 To be able to do things like alt+left to skip words and such, you need to update the key bindings. This is done by going to
 
@@ -55,10 +81,19 @@ When running git diff or similar commands that page, this will save the output t
 > Preferences -> Profiles -> Terminal -> Disable save/restore alternate screen
 
 ## Rectangle
-`brew install rectangle`
+```
+brew install rectangle
+```
+
+## MAS (Mac App Store)
+```
+brew install mas
+```
 
 ## VS Code
-`brew install --cask visual-studio-code`
+```
+brew install --cask visual-studio-code
+```
 
 Install packages:
 * Typescript
@@ -90,16 +125,45 @@ To allow Starship to be displayed right, change the font to the font you install
 [Auto calling NVM on dir change](https://github.com/nvm-sh/nvm#zsh)
 
 ## Postman
-`brew install --cask postman`
+```
+brew install --cask postman
+```
 
 ## Slack
-`brew install --cask slack`
+```
+brew install --cask slack
+```
+
+## Amphetamine
+```
+mas install 937984704
+```
 
 ## Typescript
-`npm install -g typescript`
+```
+npm install -g typescript
+```
 
 ## AWS CLI
-`brew install awscli`
+```
+brew install awscli
+```
 
 ## Docker
-`brew install --cask docker`
+```
+brew install --cask docker
+```
+
+## TablePlus
+```
+brew install --cask tableplus
+```
+
+## League!
+```
+brew install --cask league-of-legends
+```
+
+## Trackpad
+Nobody wants to not be able to right click on the touch pad, so change that.
+> System Preferences -> Trackpad -> Secondary Click -> Click in bottom right corner
