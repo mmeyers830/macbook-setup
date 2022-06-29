@@ -105,6 +105,7 @@ Install packages:
   * msjsdiag.vscode-react-native
   * eg2.vscode-npm-script
   * Prisma.prisma
+  * numso.prettier-standard-vscode
 * Python
   * ms-python.python
   * ms-toolsai.jupyter
@@ -116,6 +117,8 @@ Install packages:
   * ms-azuretools.vscode-docker
   * eamodio.gitlens
   * JuanBlanco.solidity
+  * yzane.markdown-pdf
+  * mechatroner.rainbow-csv
 
 ### VS Code Terminal
 #### Font
