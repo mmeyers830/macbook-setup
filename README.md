@@ -2,13 +2,14 @@
 ## Homebrew
 ```
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
+echo 'eval "$(/opt/homebrew/bin/brew shellenv)"' >> ~/.zprofile
+eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 ## Chrome 
 ```
 brew install --cask google-chrome
 ```
-
 ## Logi Options
 [Download](https://www.logitech.com/en-us/software/options.html)
 
@@ -25,6 +26,7 @@ First, clone a few plugins
 ```
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+brew install autojump
 ```
 In your `.zshrc` file, find the plugins
 ```
@@ -67,7 +69,9 @@ Change the font to [Hack Nerd Font Mono](https://www.nerdfonts.com) (installed a
 ### Keys Preferences
 To be able to do things like alt+left to skip words and such, you need to update the key bindings. This is done by going to
 
-> Preferences -> Profiles -> Keys -> Load Preset -> Natural Text Editing
+> Preferences -> Profiles -> Keys -> Key Mappings -> Presets -> Natural Text Editing -> Remove
+
+Also add a key mapping for CMD+t to Duplicate Tab
 
 ### Keep History
 To preserve the full history:
@@ -120,7 +124,11 @@ To allow Starship to be displayed right, change the font to the font you install
 `"terminal.integrated.fontFamily": "Hack Nerd Font Mono"`
 
 ## NVM
-`curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash`
+```
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
+source ~/.zshrc
+nvm install node
+```
 
 [Auto calling NVM on dir change](https://github.com/nvm-sh/nvm#zsh)
 
@@ -157,11 +165,6 @@ brew install --cask docker
 ## TablePlus
 ```
 brew install --cask tableplus
-```
-
-## League!
-```
-brew install --cask league-of-legends
 ```
 
 ## Trackpad
