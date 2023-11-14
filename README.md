@@ -7,42 +7,42 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```
 
 ## Chrome 
-```
+```zsh
 brew install --cask google-chrome
 ```
 ## Logi Options
 [Download](https://www.logitech.com/en-us/software/options.html)
 
 ## ITerm
-```
+```zsh
 brew install --cask iterm2
 ```
 ### oh-my-zsh
-```
+```zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 #### Plugins
 First, clone a few plugins
-```
+```zsh
 git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
 brew install autojump
 ```
 In your `.zshrc` file, find the plugins
-```
+```zsh
 plugins=(git brew autojump zsh-syntax-highlighting zsh-autosuggestions)
 ```
 
 ### Starship
 Install starship and fonts
-```
+```zsh
 brew install starship
 echo 'eval "$(starship init zsh)"' >> ~/.zshrc
 brew tap homebrew/cask-fonts
 brew install --cask font-hack-nerd-font
 ```
 Update the starship config at `~/.config/starship.toml`
-```
+```code
 format = """
 $all\
 $fill\
@@ -58,7 +58,7 @@ format = "[$time]($style) "
 
 [package]
 disabled = true
-```
+```zsh
 
 Change the color presets to [Snazzy](https://github.com/sindresorhus/iterm2-snazzy)
 > Preferences -> Profiles -> Colors -> Color Presets -> Snazzy
@@ -85,22 +85,22 @@ When running git diff or similar commands that page, this will save the output t
 > Preferences -> Profiles -> Terminal -> Disable save/restore alternate screen
 
 ## Rectangle
-```
+```zsh
 brew install rectangle
 ```
 
 ## AltTab
-```
+```zsh
 brew install --cask alt-tab
 ```
 
 ## MAS (Mac App Store)
-```
+```zsh
 brew install mas
 ```
 
 ## VS Code
-```
+```zsh
 brew install --cask visual-studio-code
 ```
 
@@ -132,7 +132,7 @@ To allow Starship to be displayed right, change the font to the font you install
 `"terminal.integrated.fontFamily": "Hack Nerd Font Mono"`
 
 ## NVM
-```
+```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
 source ~/.zshrc
 nvm install node
@@ -141,37 +141,37 @@ nvm install node
 [Auto calling NVM on dir change](https://github.com/nvm-sh/nvm#zsh)
 
 ## Postman
-```
+```zsh
 brew install --cask postman
 ```
 
 ## Slack
-```
+```zsh
 brew install --cask slack
 ```
 
 ## Amphetamine
-```
+```zsh
 mas install 937984704
 ```
 
 ## Typescript
-```
+```zsh
 npm install -g typescript
 ```
 
 ## AWS CLI
-```
+```zsh
 brew install awscli
 ```
 
 ## Docker
-```
+```zsh
 brew install --cask docker
 ```
 
 ## TablePlus
-```
+```zsh
 brew install --cask tableplus
 ```
 
