@@ -10,17 +10,22 @@ eval "$(/opt/homebrew/bin/brew shellenv)"
 ```zsh
 brew install --cask google-chrome
 ```
-## Logi Options
-[Download](https://www.logitech.com/en-us/software/options.html)
+
+## Logi Options+
+```zsh
+brew install --cask logi-options-plus
+```
 
 ## ITerm
 ```zsh
 brew install --cask iterm2
 ```
+
 ### oh-my-zsh
 ```zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
+
 #### Plugins
 First, clone a few plugins
 ```zsh
