@@ -131,6 +131,11 @@ To allow Starship to be displayed right, change the font to the font you install
 
 `"terminal.integrated.fontFamily": "Hack Nerd Font Mono"`
 
+#### Default Terminal
+To set the default integrated terminal to zsh, add this to `setting.json`:
+
+`"terminal.integrated.defaultProfile.osx": "zsh"`
+
 ## NVM
 ```zsh
 curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.1/install.sh | bash
