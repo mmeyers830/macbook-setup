@@ -89,6 +89,11 @@ When running git diff or similar commands that page, this will save the output t
 brew install rectangle
 ```
 
+## AltTab
+```
+brew install --cask alt-tab
+```
+
 ## MAS (Mac App Store)
 ```
 brew install mas
