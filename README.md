@@ -58,7 +58,7 @@ format = "[$time]($style) "
 
 [package]
 disabled = true
-```zsh
+```
 
 Change the color presets to [Snazzy](https://github.com/sindresorhus/iterm2-snazzy)
 > Preferences -> Profiles -> Colors -> Color Presets -> Snazzy
