@@ -22,7 +22,7 @@ Nobody wants to not be able to right click on the touch pad, so change that.
 ### Add Custom Profile
 Download [iterm.json](./iterm.json)
 
-> Preferences -> Profiles -> Other Actions -> Import JSON Profiles -> iterm.json
+> Settings -> Profiles -> Other Actions -> Import JSON Profiles -> iterm.json
 
 Delete the default profile.
 
