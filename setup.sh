@@ -111,3 +111,6 @@ brew install --cask docker
 
 ## TablePlus
 brew install --cask tableplus
+
+## Terraform
+brew install terraform
