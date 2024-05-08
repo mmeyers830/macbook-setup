@@ -17,6 +17,10 @@ Sign in through Github and import the settings
 Nobody wants to not be able to right click on the touch pad, so change that.
 > System Preferences -> Trackpad -> Secondary Click -> Click in bottom right corner
 
+## Alt-Tab
+Change the preferences so that they only show windows from the active Space
+> Preferences -> Controls -> Shortcut 1 (and 2) -> Change `All Spaces` to `Visible Spaces` -> Change Minimized and Hidden to `Show at the end`
+
 ## Iterm
 
 ### Add Custom Profile
